@@ -36,7 +36,7 @@ client.on('messageCreate', (message) => {
     presence_penalty: 0,
     frequency_penalty: 0.5,
   }).then((gptResponse) => {
-    if (message.channel.id === 'INPUT_YOUR_CHANNEL_ID') {
+    if (message.channel.id === '1047106260824244226') {
       message.reply(gptResponse.data.choices[0].text.substring(0));
       console.log('Answer Reply!');
       prompt += `${gptResponse.data.choices[0].text}\n`;
